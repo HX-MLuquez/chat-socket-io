@@ -1,0 +1,61 @@
+<div class="chatContainer">
+  <!-- Barra lateral izquierda -->
+  <div class="sidebar">
+    <h1>Chat General</h1>
+    <input id="username" placeholder="Tu nombre" />
+    <button onclick="connect()">Conectar</button>
+
+    <div id="general" class="sidebarSection">
+      <input id="generalInput" placeholder="Mensaje general" />
+      <button onclick="sendGeneralMessage()">Enviar</button>
+    </div>
+
+    <h2>Usuarios conectados</h2>
+    <ul id="userList"></ul>
+
+    <h2>Chats Privados</h2>
+    <div id="privateChats"></div>
+  </div>
+
+  <!-- Pantalla principal del chat seleccionado -->
+  <div class="chatMain">
+    <div id="generalMessages" class="chatMessages"></div>
+  </div>
+</div>
+
+
+{{!-- <div class="chatContainer">
+  <h1>Chat General</h1>
+  <input id="username" placeholder="Tu nombre" />
+  <button onclick="connect()">Conectar</button>
+
+  <div id="general">
+    <div id="generalMessages"></div>
+    <input id="generalInput" placeholder="Mensaje general" />
+    <button onclick="sendGeneralMessage()">Enviar</button>
+  </div>
+
+  <h2>Usuarios conectados</h2>
+  <ul id="userList"></ul>
+
+  <h2>Chats Privados</h2>
+  <div id="privateChats"></div>
+
+
+</div> --}}
+
+
+
+{{!-- <div class="chatContainer">
+  <header>
+    <h3 class="userName"></h3>
+    <p class="typing"></p>
+  </header>
+  <main>
+    <div class="chatMessage"></div>
+  </main>
+  <footer>
+    <input type="text" placeholder="Message" id="inputMessage"/>
+    <button id="btnMessage">Enviar</button>
+  </footer>
+</div> --}}
