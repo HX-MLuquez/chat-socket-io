@@ -21,6 +21,18 @@ socketHandler(io);
 
 const PORT = process.env.PORT || 8080;
 httpServer.listen(PORT, '0.0.0.0', () => {
-  console.log(`Servidor en http://0.0.0.0:${PORT}`);
+  console.log(`Servidor en http://localhost:${PORT}`);
 });
 
+/*
+localhost o 127.0.0.1 → Solo acepta conexiones locales (desde la misma máquina)
+0.0.0.0 → Acepta conexiones desde cualquier dirección IP, tanto internas como externas
+
+httpServer.listen(8080, '0.0.0.0');
+→ Puedes acceder desde:
+http://localhost:8080 (local)
+http://<IP-del-servidor>:8080 (externo)
+
+Es útil para pruebas locales y desarrollo, pero en producción es mejor usar 
+un proxy inverso (como Nginx) para manejar las conexiones externas.
+*/
