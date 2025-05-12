@@ -6,7 +6,7 @@ const socketHandler = require("./src/config/socket.config.js");
 const httpServer = createServer(app);
 const io = new Server(httpServer);
 
-// Modularizamos el manejo de sockets
+// Socket.io configuration
 socketHandler(io);
 
 const PORT = process.env.PORT || 8080;
